@@ -17,5 +17,7 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   page.setDefaultTimeout(60000);
   await expect(page.locator('#installing-playwright')).toBeVisible();
+ //Failure
+   await expect(page.locator('#iinstalling-playwright')).toBeVisible();
 
 });
