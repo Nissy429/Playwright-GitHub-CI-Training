@@ -18,6 +18,6 @@ test('get started link', async ({ page }) => {
   page.setDefaultTimeout(60000);
   await expect(page.locator('#installing-playwright')).toBeVisible();
  //Failure
-   await expect(page.locator('#iinstalling-playwrig')).toBeVisible();
+  // await expect(page.locator('#iinstalling-playwrig')).toBeVisible();
 
 });
