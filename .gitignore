@@ -6,3 +6,85 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+lib-cov
+
+# Dependencies
+jspm_packages/
+bower_components/
+web_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# npm and package managers
+.npm
+.yarn-integrity
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Caches
+.grunt
+.cache
+.parcel-cache
+.vite/
+**/.vitepress/cache
+.astro/
+.turbo/
+.nx/cache/
+.nx/workspace-data/
+.nx/migrate-runs/
+.docusaurus/
+.fusebox/
+.firebase/
+.dynamodb/
+.serverless/
+.temp/
+.svelte-kit/
+.vuepress/dist/
+
+# Build output
+build/Release/
+dist/
+.next/
+out/
+.nuxt/
+.output/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Other
+*.tgz
+.lock-wscript
+.tern-port
+.vscode-test/
