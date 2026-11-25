@@ -18,7 +18,9 @@ test('get started link', async ({ page }) => {
   page.setDefaultTimeout(60000);
   await expect(page.locator('#installing-playwright')).toBeVisible();
   await expect(page.locator('#introduction')).toBeVisible();
+  await expect(page.locator('.linkLabel_WmDU')).toBeVisible();
   await page.locator('.linkLabel_WmDU').click();
+ 
   
  //Failure
   // await expect(page.locator('#iinstalling-playwrig')).toBeVisible();
