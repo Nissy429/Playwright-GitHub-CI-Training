@@ -9,9 +9,9 @@ export default defineConfig({
 
   forbidOnly: !!process.env.CI,
 
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
 
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 2 : undefined,
 
   reporter: [
     ['html', {
@@ -26,7 +26,7 @@ export default defineConfig({
   use: {
     headless: true,
 
-    screenshot: 'only-on-failure',
+    screenshot: 'on',
 
     video: 'retain-on-failure',
 
@@ -39,7 +39,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
+ /*   {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
@@ -47,6 +47,6 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },
+    },*/
   ],
 });
