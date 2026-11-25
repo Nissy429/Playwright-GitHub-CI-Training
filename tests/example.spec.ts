@@ -25,6 +25,7 @@ test('get started link', async ({ page }) => {
 
 await page.getByRole('link', { name: 'Writing tests', exact: true }).click();
   await expect(page.locator('.breadcrumbHomeIcon_YNFT')).toBeVisible();
+  page.getByText('You will learn', { exact: true })
  //Failure
   // await expect(page.locator('#iinstalling-playwrig')).toBeVisible();
 
